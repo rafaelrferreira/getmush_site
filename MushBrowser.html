@@ -85,13 +85,13 @@
 
         function getImageUrl()
         {
-            return $("#inputBox").val();
-
+            //return $("#inputBox").val();
             $.ajax({ 
                    type: "GET",
                    dataType: "json",
-                   url: "http://getmush.com/get",
+                   url: "http://localhost:3000/GetUrlImage?url=www.xhamster.com",
                    success: function(data){        
+                     alert(data);
                      return data;
                    }
             });                
